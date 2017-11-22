@@ -15,8 +15,8 @@
 }
 
 #vhod{	
-	font-size: 45px;
-	margin-left: 92px;
+	font-size: 35px;
+	margin-left: 75px;
 }
 input::-webkit-input-placeholder { color: #fff; }
 input::-moz-placeholder { color: #fff; }
@@ -29,7 +29,7 @@ input         {
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width: 275px;
+  width: 245px;
   border:none;
   border-bottom:1px solid #757575;
   background-color: #111;
@@ -58,7 +58,7 @@ input:focus ~ label, input:valid ~ label    {
 }
 
 
-.bar  { position:relative; display:block; width:275px; }
+.bar  { position:relative; display:block; width:245px; }
 .bar:before, .bar:after   {
   content:'';
   height:2px; 
@@ -176,7 +176,7 @@ input:focus ~ .highlight {
 /*Ховер ввиде нижней линии для кнопочки*/
 #click {
   top: 145px;
-  left: 110px;
+  left: 200px;
   height: 40px;
   position: absolute;
   display: inline-block;
@@ -211,8 +211,7 @@ input:focus ~ .highlight {
 
 /*Конец ховера ввиде нижней линни для кнопочки*/
 
-
-/*Анимация кнопки при нажатии на неё+стилизация 1*/
+/*Анимация кнопки при нажатии на неё+стилизация*/
 
 #click1{
   top: 350px;
@@ -259,8 +258,8 @@ input:focus ~ .highlight {
  /*Конец анимации*/
 /*Ховер ввиде нижней линии для кнопочки*/
 #click1 {
-  top: 145px;
-  left: 55px;
+  top: 25px;
+  left: 60px;
   height: 40px;
   position: absolute;
   display: inline-block;
@@ -295,6 +294,7 @@ input:focus ~ .highlight {
 
 /*Конец ховера ввиде нижней линни для кнопочки*/
 
+
 h1 {
 font-size:50px;
 color:#fff;
@@ -308,3 +308,34 @@ text-shadow:2px 2px 0 #000,
 -2px 0px 0 #000,
 4px 4px 3px #000;
 } 
+
+/* Стили для текста регистрации */
+
+#textReg {
+	margin-left: 70px;
+	margin-top: 170px;
+	font-size: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
