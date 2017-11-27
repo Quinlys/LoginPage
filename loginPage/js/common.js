@@ -3,7 +3,7 @@ $(function() {
 	$('#my-menu').mmenu({
 		extensions: [ 'widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black' ],
 		navbar: {
-			title: '<img src="img/logo-1.svg" alt=">'
+			title: ''
 		},
 		offCanvas: {
 			position  : 'right'
