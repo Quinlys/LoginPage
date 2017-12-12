@@ -14,7 +14,7 @@
 	font-size: 7vh;
 }
 
-#vhod{	
+#enter{
 	font-size: 35px;
 	margin-left: 150px;
 }
@@ -123,7 +123,7 @@ input:focus ~ .highlight {
 	color: #fff;
 }
 
-#vhod1{
+#log-in{
 	position: absolute;
 	left: 15%;
 }

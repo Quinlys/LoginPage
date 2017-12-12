@@ -4,7 +4,6 @@
 <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <meta charset="utf-8">
-    <script type="text/javascript" src="js/bootstrap.js" defer></script>
 
     <title>KPI Groups</title>
     <meta name="description" content="">
@@ -58,8 +57,8 @@
             </a>
             <nav id="my-menu">
                 <ul>
-                    <p id="vhod">Вхід</p>
-                    <form id="vhod1">
+                    <p id="enter">Вхід</p>
+                    <form id="log-in">
 
                         <li>
                             <div class="group">
@@ -81,8 +80,9 @@
                     <button id="click">Ввійти</button>
                     <p id="textReg">До сих пір немає аккаунту на нашому сайті?</p>
                     <li>
-                    <button onclick="this.parentNode.removeChild(this)" id="click1">Реєстрація</button>
-                        <button id="click2"">Реєстрація для студента</button>
+                        <button onclick="deleteEl()" id="click1">Реєстрація</button>
+                        <button id="click2"
+                        ">Реєстрація для студента</button>
                         <button id="click2">Реєстрація для викладача</button>
                         <button id="click2" style="width: 210px;">Реєстрація сторінки групи</button>
                     </li>
@@ -148,7 +148,9 @@
 
     <div id="my-content">
         <link rel="stylesheet" href="css/main.min.css">
+        <script src="js/js.js"></script>
         <script src="js/scripts.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
     </div>
 </div>
 </body>
