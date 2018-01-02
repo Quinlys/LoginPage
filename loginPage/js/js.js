@@ -1,39 +1,26 @@
+$(document).ready(function(){
+    var primaryBtn = $('#click1');
+    var secondaryBtns = $('.secondary');
+    primaryBtn.click(function () {
+        //primaryBtn.classList.add('hide');
+        deleteItem(primaryBtn, 600, showSecondaryBtns);
+    });
 
-// ----------------------- Анімації появи та затухання елементів -------------------- \\
-
-
-// Видалення елементу
-
-function deleteEl() {
-    let el = document.getElementById('click1');
-    setTimeout(function() {
-        el.parentNode.removeChild(el);
-    }, 450);
-}
-
-// Затухання елементу 
-
-function run() {
-	let el = document.getElementById('click1');
-	setTimeout(function() {
-
-    // Дія затухання елементу.
-
-	}, 450);
-}
+    function deleteItem(item, delay, callback) {
+        item.animate({opacity:0},{duration: 500, queue: false
+        }).promise().done(
+            function(){
+                item.remove();
+                callback(delay);}
+        );
 
 
-// Поява елементів click2
+    }
 
-function run1() {
-	let el = document.getElementById('click2');
-	setTimeout(function() {
-		setTimeout(function() {
-			
-			// Дія появи елементу.
+    function showSecondaryBtns(delay) {
+        secondaryBtns.animate({opacity:1});
+    }
 
-		}, 450);
-	}, 450);
-}
 
-// ---------------------------------- The END ------------------------------------- \\
+
+});
