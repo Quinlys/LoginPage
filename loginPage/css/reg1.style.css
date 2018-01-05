@@ -66,10 +66,8 @@ header {
 .registration {
 	height: 90%;
 	width: 100%;
-	margin-left: 10vh;
-	margin-right: 10vh;
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 .name {
@@ -90,7 +88,7 @@ header {
 
 }
 
-span, label, input {
+span, label, input ,{
 	opacity: 1;
 }
 
@@ -162,7 +160,105 @@ span, label, input {
 
 
 
+/*Инпуты*/
+input::-webkit-input-placeholder { color: #00ffff; }
+input::-moz-placeholder { color: #00ffff; }
+/*Анимация инпутов*/
+.group        {
+	opacity: 1;
+    position:relative;
+    margin-bottom:45px;
+}
+input         {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width: 245px;
+    border:none;
+    border-bottom:1px solid #757575;
+    background-color: #111;
+    color: #fff;
+}
+input:focus{ outline:none; }
 
+
+label          {
+    color:#fff;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:10px;
+    top: 12px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+
+input:focus ~ label, input:valid ~ label    {
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+}
+
+
+.bar  { position:relative; display:block; width:245px; }
+.bar:before, .bar:after   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#5264AE;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+
+.highlight {
+    position:absolute;
+    height:60%;
+    widows: 100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:1;
+}
+
+
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+/*Инпуты*/
 
 
 
