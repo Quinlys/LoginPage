@@ -72,8 +72,48 @@ header {
 	opacity: 0.6;
 }
 
+.name {
+	margin-top: 5vh;
+	margin-left: 10vh;
+	float: left;
+
+}
+
+
+.surname {
+	margin-top: 5vh;
+}
+
+.nameG {
+	margin-left: 10vh;
+	float: left;
+
+}
+
+span, label, input {
+	opacity: 1;
+}
+
+
 /* ------------------------ Адаптация под телефоны ---------------------- */
 
+
+/* --------------- Адаптация под iPhone 4 --------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.name {
+		margin-left: 0;
+	}
+
+	.nameG {
+		margin-left: 0;
+	}
+
+	.surname {
+		margin-top: 0;
+	}
+
+}
 
 /* --------------- Адаптация под iPhone 5 --------------- */
 
@@ -90,12 +130,23 @@ header {
 /* ------------- Адаптация под iPhone 7/8 --------------- */
 
 @media (min-width: 375px) and (max-width: 667px){
+	.name {
+		margin-left: 0;
+	}
+	.surname {
+		margin-top: 0;
+	}
 }
 
 /* --------------- Адаптация под Galaxy S5 -------------- */
 
 @media (min-width: 360px) and (max-width: 640px) {
-
+	.name {
+		margin-left: 0;
+	}
+	.surname {
+		margin-top: 0;
+	}
 }
 
 /* --------------- Адаптация под iPhone X --------------- */

@@ -59,7 +59,7 @@ header {
 .regText {
 	color: #aaa;
 	font-size: 4vh;
-	margin-right: 10%;
+	margin-right: 7%;
 	padding-top: 15px; 
 }
 
@@ -69,7 +69,7 @@ header {
 	margin-left: 10vh;
 	margin-right: 10vh;
 	background-color: black;
-	opacity: 0.6;
+	opacity: 0.55;
 }
 
 /* ------------------------ Адаптация под телефоны ---------------------- */
