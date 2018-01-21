@@ -34,17 +34,41 @@ header {
 	padding-top: 15px; 
 }
 
-.registration {
-	height: 90%;
-	width: 100%;
-	margin-left: 10vh;
-	margin-right: 10vh;
-	background-color: black;
-	opacity: 0.7;
+#firstText {
+	margin: 20px 0px 0px 35px;
+	font-size: 22px;
 }
+
+.group {
+	margin-top: 5vh;
+	margin-left: 15vh;
+	float: left;
+	text-align: center;
+}
+
+
 
 /* ------------------------ Адаптация под телефоны ---------------------- */
 
+
+/* --------------- Адаптация под iPhone 4 --------------- */
+
+@media (min-width: 320px) and (max-width: 480px) {
+	#firstText {
+		font-size: 15px;
+	}
+	.group {
+		margin-left: 10px;
+	}
+	.surname {
+		margin-top: 0px;
+	}
+
+	.nameG {
+		margin-top: 0px;
+	}
+
+}
 
 /* --------------- Адаптация под iPhone 5 --------------- */
 
@@ -61,17 +85,39 @@ header {
 /* ------------- Адаптация под iPhone 7/8 --------------- */
 
 @media (min-width: 375px) and (max-width: 667px){
+	.group {
+		margin-left: 10px;
+	}
+	.surname {
+		margin-top: 0px;
+	}
+
+	.nameG {
+		margin-top: 0px;
+	}
+
 }
 
 /* --------------- Адаптация под Galaxy S5 -------------- */
 
 @media (min-width: 360px) and (max-width: 640px) {
+	.group {
+		margin-left: 10px;
+	}
 
+	.surname {
+		margin-top: 0px;
+	}
+
+	.nameG {
+		margin-top: 0px;
+	}
 }
 
 /* --------------- Адаптация под iPhone X --------------- */
 
 @media (min-width: 375px) and (max-width: 812px){
+
 
 }
 
@@ -82,6 +128,105 @@ header {
 
 
 
+/*Инпуты*/
+input::-webkit-input-placeholder { color: #00ffff; }
+input::-moz-placeholder { color: #00ffff; }
+/*Анимация инпутов*/
+.group {
+	opacity: 1;
+    position:relative;
+    margin-bottom:45px;
+}
+
+input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width: 245px;
+    border:none;
+    border-bottom:1px solid #ddd;
+    color: #fff;
+}
+input:focus{ outline:none; }
+
+
+label          {
+    color:#fff;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:10px;
+    top: 12px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+
+input:focus ~ label, input:valid ~ label    {
+    top:-20px;
+    font-size:14px;
+    color:#8e9cd1;
+}
+
+
+.bar  { position:relative; display:block; width:245px; }
+.bar:before, .bar:after   {
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#3264AE;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+
+.highlight {
+    position:absolute;
+    height:60%;
+    widows: 100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:1;
+}
+
+
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to  { width:0; background:transparent; }
+}
+/*Инпуты*/
 
 
 
