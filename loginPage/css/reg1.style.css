@@ -45,6 +45,97 @@ header {
 	text-align: center;
 }
 
+.dwtext {
+	margin: 0;
+	padding-left: 7vh;
+	font-size: 18px;
+}
+
+.email {
+margin-top: 30px;
+margin-left: -30px;
+}
+
+.click2 {
+	padding-left: -10px;
+	margin-left: -100px;
+}
+
+#click {
+	margin-left: 60px;
+}
+
+
+.click{
+	height: 30px;
+	width: 130px;
+	background-color: #4d86bf;
+	color: #fff;
+	margin-left: 20px;
+}
+
+.dwtext{
+	margin-left: -68px;
+}
+
+
+.srb{
+	opacity: 0;
+	width: 500px;
+	height: 200px;
+	margin-left: 20px;
+	margin-top: 70px;
+}
+
+.click2{
+	height: 30px;
+	width: 130px;
+	background-color: #4d86bf;
+	color: #fff;
+	margin-left: 60px;
+	margin-top: 100px;
+}
+.click, .click2{
+    outline : none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+}
+
+
+.click, .click2{
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(25, 25);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40, 40);
+    }
+}
+
+
+
+
+.click:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+
+
+
+
 
 /* ------------------------ Адаптация под телефоны ---------------------- */
 
@@ -68,7 +159,32 @@ header {
 /* --------------- Адаптация под iPhone 5 --------------- */
 
 @media (min-width: 320px) and (max-width: 568px) {
-
+	#srb{
+	margin-top: 15px;
+	margin-left: 0px;
+	width: 250px;
+	height: 100px;
+	}
+	#dwtext{
+		margin-left: 0px;
+	}
+	#click{
+		margin-left: 0px;
+	}
+	#bar{
+		width: 130px;
+	}
+	#email{
+		width: 150px;
+		margin-left: 0px;
+	}
+	#click2{
+		margin-left: 150px;
+		margin-top: -75px;
+	}
+	.login{
+		width: 130px;
+	}
 }
 
 /* ----------- Адаптация под iPhone 7/8 Plus ------------ */
@@ -121,8 +237,6 @@ header {
 /* ------------------------ Конец адаптации под телефоны ---------------------- */
 
 
-
-
 /*Инпуты*/
 input::-webkit-input-placeholder { color: #00ffff; }
 input::-moz-placeholder { color: #00ffff; }
@@ -139,7 +253,7 @@ input {
     display:block;
     width: 245px;
     border:none;
-    border-bottom:1px solid #757575;
+    border-bottom:1px solid #ddd;
     color: #fff;
 }
 input:focus{ outline:none; }
@@ -162,7 +276,7 @@ label          {
 input:focus ~ label, input:valid ~ label    {
     top:-20px;
     font-size:14px;
-    color:#5264AE;
+    color:#8e9cd1;
 }
 
 
@@ -222,17 +336,6 @@ input:focus ~ .highlight {
     to  { width:0; background:transparent; }
 }
 /*Инпуты*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
