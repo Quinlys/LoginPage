@@ -40,9 +40,24 @@ header {
 
 .group {
 	margin-top: 5vh;
-	margin-left: 15vh;
 	float: left;
 	text-align: center;
+}
+
+.name {
+	margin-left: 70px;
+}
+
+.surname {
+	margin-left: 40px;
+}
+
+.nameG {
+	margin-left: 70px;
+}
+
+.password {
+	margin-left: 40px;
 }
 
 .dwtext {
@@ -55,6 +70,7 @@ header {
 margin-top: 30px;
 margin-left: -30px;
 }
+
 
 .click2 {
 	padding-left: -10px;
@@ -144,8 +160,13 @@ margin-left: -30px;
 
 @media (min-width: 320px) and (max-width: 480px) {
 	.group {
-		margin-left: 0px;
+		margin-left: 20px;
 	}
+
+	.name {
+		margin-top: 30px;
+	}
+
 	.surname {
 		margin-top: 0px;
 	}
@@ -154,6 +175,9 @@ margin-left: -30px;
 		margin-top: 0px;
 	}
 
+	.password {
+		margin-top: 0px;
+	}
 }
 
 /* --------------- Адаптация под iPhone 5 --------------- */
@@ -190,6 +214,26 @@ margin-left: -30px;
 /* ----------- Адаптация под iPhone 7/8 Plus ------------ */
 
 @media (min-width: 414px) and (max-width: 736px) {
+	.group {
+		margin-left: 80px;
+	}
+
+	.name {
+		margin-top: 30px;
+	}
+
+	.surname {
+		margin-top: 0px;
+	}
+
+	.nameG {
+		margin-top: 0px;
+	}
+
+	.password {
+		margin-top: 0px;
+	}
+}
 
 }
 
@@ -213,7 +257,11 @@ margin-left: -30px;
 
 @media (min-width: 360px) and (max-width: 640px) {
 	.group {
-		margin-left: 0px;
+		margin-left: 35px;
+	}
+
+	.name {
+		margin-top: 30px;
 	}
 
 	.surname {
@@ -221,6 +269,10 @@ margin-left: -30px;
 	}
 
 	.nameG {
+		margin-top: 0px;
+	}
+
+	.password {
 		margin-top: 0px;
 	}
 }
