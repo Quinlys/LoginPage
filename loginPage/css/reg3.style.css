@@ -39,12 +39,25 @@ header {
 	font-size: 22px;
 }
 
+
 .group {
 	margin-top: 5vh;
-	margin-left: 15vh;
 	float: left;
 	text-align: center;
 }
+
+.name, .nameG {
+	margin-left: 70px;
+}
+
+.surname, .password {
+	margin-left: 40px;
+}
+
+.part2 {
+	margin-top: 30px;
+}
+
 
 
 
