@@ -18,6 +18,7 @@ body {
 }
 header {
 	background-color: white;
+	background-size: cover;
 }
 
 .header {
@@ -71,6 +72,13 @@ margin-top: 30px;
 margin-left: 55px;
 }
 
+.srb{
+	opacity: 0;
+	width: 500px;
+	height: 200px;
+	margin-left: 20px;
+	margin-top: 70px;
+}
 
 .click{
 	height: 30px;
@@ -80,22 +88,14 @@ margin-left: 55px;
 }
 
 
-
-.srb{
-	opacity: 0;
-	width: 500px;
-	height: 200px;
-	margin-left: 20px;
-	margin-top: 70px;
-}
-
 .click2{
+	margin-top: 55px;
 	height: 30px;
 	width: 130px;
 	background-color: #4d86bf;
 	color: #fff;
-	margin-top: 100px;
 }
+
 .click, .click2{
     outline : none;
     border: none;
@@ -106,6 +106,8 @@ margin-left: 55px;
     position: relative;
     overflow: hidden;
 }
+
+
 
 
 @keyframes ripple {
@@ -123,9 +125,7 @@ margin-left: 55px;
     }
 }
 
-.click:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
-}
+
 
 
 /* ------------------------ Адаптация под телефоны ---------------------- */
@@ -134,6 +134,10 @@ margin-left: 55px;
 /* --------------- Адаптация под iPhone 4 --------------- */
 
 @media (min-width: 320px) and (max-width: 480px) {
+	.click {
+		margin-left: 100px;
+	}
+
 	.group {
 		margin-left: 20px;
 	}
@@ -164,25 +168,17 @@ margin-left: 55px;
 	width: 250px;
 	height: 100px;
 	}
-	#dwtext{
-		margin-left: 0px;
+
+	#dwtext {
+		margin-left: 37px;
+		width: 260px;
 	}
 	#click{
-		margin-left: 0px;
+		margin: 10px 0px 0px 135px;
 	}
-	#bar{
-		width: 130px;
-	}
-	#email{
-		width: 150px;
-		margin-left: 0px;
-	}
+
 	#click2{
-		margin-left: 150px;
-		margin-top: -75px;
-	}
-	.login{
-		width: 130px;
+		margin: 0px 0px 20px 135px;
 	}
 }
 
@@ -215,25 +211,12 @@ margin-left: 55px;
 /* ------------- Адаптация под iPhone 7/8 --------------- */
 
 @media (min-width: 375px) and (max-width: 667px){
-	.group {
-		margin-left: 0px;
-	}
-	.surname {
-		margin-top: 0px;
-	}
-
-	.nameG {
-		margin-top: 0px;
-	}
 
 }/* ------------- Адаптация под iPad --------------- */
 
 @media (min-width: 768px) and (max-width: 1024px){
-	.dwtext {
-		margin-left: 50px;
-	}
-	.email {
-		margin-left: 46px;
+	.dwtext, .email {
+		margin-left: 75px;
 	}
 }
 
