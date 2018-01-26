@@ -82,14 +82,23 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
         <div class="row">
-         <p id="dwtext" style="font-size: 18px;" class="dwtext">Завантажте фото залікової книжки: </p>
-        <button id="click" class="click"><p style="margin-top: -5px;">Upload img</p></button>
-        <img class="srb" id="srb" src="img/example.jpg" alt="Заліковка" style="display: none;">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <p id="dwtext" class="dwtext">Завантажте фото залікової книжки: </p>
+                <img class="srb" id="srb" src="img/example.jpg" alt="Заліковка" style="display: none;">
+            </div>
+            <div class="col-sm-6 col-md-2 col-lg-2 col-lg-2">
+                <button id="click" class="click">
+                    <p style="margin-top: -5px;">Upload img</p>
+                </button>
+            </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3">
+            <img class="srb" id="srb" src="img/example.jpg" alt="Заліковка" style="display: none;">
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
                 <div class="group email">
                     <input id="login" class="login" type="text" required>
                     <span class="highlight" id="highlight"></span>
@@ -97,7 +106,9 @@
                     <label>E-mail</label>
                 </div>
             </div>
-            <button id="click2" class="click2"><p style="margin-top: -5px;">Підвердити</p></button>
+            <div class="col-sm-6 col-md-2 col-lg-2 col-lg-2">
+                <button id="click2" class="click2"><p style="margin-top: -5px;">Підвердити</p></button>
+            </div>
         </div>
     </div>
     </div>
