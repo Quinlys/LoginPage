@@ -88,18 +88,25 @@
             </div>
         </div>     <!-- ********************** -->
         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
                 <p id="dwtext" class="dwtext">Завантажте фото залікової книжки: </p>
                 <img class="srb" id="srb" src="img/example.jpg" alt="Заліковка" style="display: none;">
             </div>
-            <div class="col-sm-6 col-md-2 col-lg-2 col-lg-2">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                <div class="fileform">
+                    <div id="fileformlabel"></div>
+                    <div class="selectbutton">Обзор</div>
+                    <input type="file" name="upload" id="upload" onchange="getName(this.value);" />
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
                 <button id="click" class="click">
                     <p style="margin-top: -5px;">Upload img</p>
                 </button>
             </div>
         </div>
         <div class="row" id="photo">
-            <img id="srb" class="srb" src="srb/srb1.jpg" alt="SRB" />
+            
         </div>
         <div class="row">
             <div class="col-sx-6 col-sm-6 col-md-6 col-lg-4 col-xl-4">

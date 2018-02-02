@@ -72,6 +72,8 @@ margin-top: 30px;
 margin-left: 55px;
 }
 
+/* 				DIV for photo SRB. 		*/
+
 #photo {
 	height: 0px;
 	width: 0px;
@@ -88,6 +90,8 @@ margin-left: 55px;
 	margin-left: 20px;
 	margin-top: 70px;
 }
+
+/*					BUTTONS 			*/
 
 .click{
 	height: 30px;
@@ -211,19 +215,37 @@ margin-left: 55px;
 
 }
 
-/* ------------- Адаптация под iPhone 7/8 --------------- */
-
-@media (min-width: 375px) and (max-width: 667px){
-
-}/* ------------- Адаптация под iPad --------------- */
+/* ------------- Адаптация под iPad --------------- */
 
 @media (min-width: 768px) and (max-width: 1024px){
 	.dwtext, .email {
 		margin-left: 75px;
 	}
+
+	.click {
+		margin-left: 485px;
+	}
+
+	.click2 {
+		margin-left: 100px;
+	}
 }
 
+/* ------------- Адаптация под iPad PRO --------------- */
 
+@media (min-width: 1024px) and (max-width: 1366px){
+	.dwtext, .email {
+		margin-left: 75px;
+	}
+
+	.click {
+		margin: 20px 0px 0px 615px;
+	}
+
+	.click2 {
+		margin-left: 275px;
+	}
+}
 
 /* --------------- Адаптация под Galaxy S5 -------------- */
 
@@ -256,22 +278,19 @@ margin-left: 55px;
 
 }
 
+/*					INPUTS. 				*/
 
+#login::-webkit-input-placeholder { color: #00ffff; }
+#login::-moz-placeholder { color: #00ffff; }
 
-/* ------------------------ Конец адаптации под телефоны ---------------------- */
-
-
-/*Инпуты*/
-input::-webkit-input-placeholder { color: #00ffff; }
-input::-moz-placeholder { color: #00ffff; }
-/*Анимация инпутов*/
+/*				Animation for inputs		*/
 .group {
 	opacity: 1;
     position:relative;
     margin-bottom:45px;
 }
 
-input {
+#login {
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
@@ -280,7 +299,7 @@ input {
     border-bottom:1px solid #ddd;
     color: #fff;
 }
-input:focus{ outline:none; }
+#login:focus{ outline:none; }
 
 
 label          {
@@ -297,7 +316,7 @@ label          {
 }
 
 
-input:focus ~ label, input:valid ~ label    {
+#login:focus ~ label, #login:valid ~ label    {
     top:-20px;
     font-size:14px;
     color:#8e9cd1;
@@ -324,7 +343,7 @@ input:focus ~ label, input:valid ~ label    {
 }
 
 
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+#login:focus ~ .bar:before, #login:focus ~ .bar:after {
     width:50%;
 }
 
@@ -340,7 +359,7 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 
-input:focus ~ .highlight {
+#login:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
@@ -359,7 +378,68 @@ input:focus ~ .highlight {
     from { background:#5264AE; }
     to  { width:0; background:transparent; }
 }
-/*Инпуты*/
+
+/*     INPUT [TYPE=FILE].     */
+
+.fileform { 
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 26px;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 230px;
+}
+ 
+.fileform .selectbutton { 
+    background-color: #A2A3A3;
+    border: 1px solid #939494;
+    border-radius: 2px;
+    color: #FFFFFF;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 50px;
+}
+ 
+#upload{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 30px; 
+    z-index:20;
+}
+
+.selectbutton {
+	font-size: 13px;
+}
+
+#fileformlabel { 
+background-color: #FFFFFF;
+color: #000;
+float: left;
+height: 22px;
+line-height: 22px;
+overflow: hidden;
+padding: 2px;
+text-align: left;
+vertical-align: middle;
+width:160px;
+}
+
 
 
 
