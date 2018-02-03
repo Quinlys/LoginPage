@@ -226,6 +226,23 @@ margin-left: 55px;
 
 }
 
+/* ------------- Адаптация под iPad --------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	#click {
+		margin-top: -20px;
+	}
+
+	#dwtext {
+		margin-left: 65px;
+		padding-left: 35px;
+	}
+
+	#click2 {
+		margin-left: 10px;
+	}
+}
 
 /* ------------- Адаптация под iPad PRO --------------- */
 
@@ -234,16 +251,13 @@ margin-left: 55px;
 		margin-left: 75px;
 	}
 
-	.click {
-		margin-bottom: 10px
-	}
-
-	.click2 {
-		margin-left: 275px;
+	#click {
+		margin-top: -20px;
 	}
 
 	.fileform {
 		margin-left: 40px;
+		margin-top: 10px;
 	}
 }
 
