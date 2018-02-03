@@ -73,6 +73,9 @@ margin-left: 55px;
 }
 
 /* 				DIV for photo SRB. 		*/
+.fileform {
+		margin-left: 40px;
+	}
 
 #photo {
 	height: 0px;
@@ -102,6 +105,7 @@ margin-left: 55px;
 
 
 .click2{
+	margin-left: 40px;
 	margin-top: 120px;
 	height: 30px;
 	width: 130px;
@@ -215,21 +219,6 @@ margin-left: 55px;
 
 }
 
-/* ------------- Адаптация под iPad --------------- */
-
-@media (min-width: 768px) and (max-width: 1024px){
-	.dwtext, .email {
-		margin-left: 75px;
-	}
-
-	.click {
-		margin-left: 485px;
-	}
-
-	.click2 {
-		margin-left: 100px;
-	}
-}
 
 /* ------------- Адаптация под iPad PRO --------------- */
 
@@ -239,11 +228,15 @@ margin-left: 55px;
 	}
 
 	.click {
-		margin: 20px 0px 0px 615px;
+		margin-bottom: 10px
 	}
 
 	.click2 {
 		margin-left: 275px;
+	}
+
+	.fileform {
+		margin-left: 40px;
 	}
 }
 
@@ -275,7 +268,13 @@ margin-left: 55px;
 
 @media (min-width: 375px) and (max-width: 812px){
 
+	.fileform {
+		margin-top: 18px;
+	}
 
+	.click {
+		margin-top: 30px;
+	}
 }
 
 /*					INPUTS. 				*/
