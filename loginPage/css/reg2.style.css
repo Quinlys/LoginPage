@@ -63,13 +63,17 @@ header {
 	margin: 0;
 	padding-left: 7vh;
 	font-size: 18px;
-	margin-left: 55px;
+	margin-left: 65px;
 	padding: 0;
 }
 
+.fileform {
+	margin-left: 40px;
+}
+
 .email {
-margin-top: 30px;
-margin-left: 55px;
+	margin-top: 30px;	
+	margin-left: 55px;
 }
 
 #photo {
@@ -90,6 +94,7 @@ margin-left: 55px;
 }
 
 .click{
+	margin-left: 70px;
 	height: 30px;
 	width: 130px;
 	background-color: #4d86bf;
@@ -98,6 +103,7 @@ margin-left: 55px;
 
 
 .click2{
+	margin-left: 40px;
 	margin-top: 120px;
 	height: 30px;
 	width: 130px;
@@ -143,10 +149,6 @@ margin-left: 55px;
 /* --------------- Адаптация под iPhone 4 --------------- */
 
 @media (min-width: 320px) and (max-width: 480px) {
-	.click {
-		margin-left: 100px;
-	}
-
 	.group {
 		margin-left: 20px;
 	}
@@ -158,6 +160,11 @@ margin-left: 55px;
 	.surname, .faculty, .nameG, .password, .pulpit, .post, .subject {
 		margin-top: 0px;
 	}
+
+	.fileform {
+		margin-top: 20px;
+		margin-left: 33px;
+	}
 }
 
 /* --------------- Адаптация под iPhone 5 --------------- */
@@ -165,15 +172,19 @@ margin-left: 55px;
 @media (min-width: 320px) and (max-width: 568px) {
 
 	#dwtext {
-		margin-left: 37px;
+		margin-left: 27px;
 		width: 260px;
 	}
 	#click{
-		margin: 10px 0px 0px 135px;
+		margin: 10px 0px 0px 125px;
 	}
 
 	#click2{
-		margin: 0px 0px 20px 135px;
+		margin: 0px 0px 20px 125px;
+	}
+
+	.fileform {
+		margin-left: 24px;
 	}
 }
 
@@ -202,24 +213,39 @@ margin-left: 55px;
 	}
 }
 
+/* ------------- Адаптация под iPad --------------- */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	#dwtext {
+		margin-left: 65px;
+		padding-left: 35px;
+	}
+}
 
 /* ------------- Адаптация под iPad PRO --------------- */
 
 @media (min-width: 1024px) and (max-width: 1366px){
-	.dwtext, .email {
+	.email {
 		margin-left: 75px;
 	}
 
-	.click {
-		margin-bottom: 10px
+	#dwtext {
+		margin-left: 75px;
+		padding: 0px;
+	}
+
+	#click {
+		margin-left: -10px;
+		margin-top: 10px;
 	}
 
 	.click2 {
-		margin-left: 275px;
+		margin-left: 110px;
 	}
 
 	.fileform {
-		margin-left: 40px;
+		margin-left: 35px;
+		margin-top: 10px;
 	}
 }
 
@@ -246,12 +272,22 @@ margin-left: 55px;
 
 @media (min-width: 375px) and (max-width: 812px){
 
+	#dwtext {
+		margin-left: 35px;
+	}
+
 	.fileform {
+		margin-left: 35px;
 		margin-top: 18px;
 	}
 
-	.click {
+	#click {
 		margin-top: 30px;
+		margin-left: 135px;
+	}
+
+	#click2 {
+		margin-left: 135px;
 	}
 }
 
