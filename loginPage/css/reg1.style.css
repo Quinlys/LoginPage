@@ -68,14 +68,9 @@ header {
 }
 
 .email {
-margin-top: 30px;
-margin-left: 55px;
+    margin-top: 30px;
+    margin-left: 55px;
 }
-
-/* 				DIV for photo SRB. 		*/
-.fileform {
-		margin-left: 40px;
-	}
 
 #photo {
 	height: 0px;
@@ -94,8 +89,6 @@ margin-left: 55px;
 	margin-top: 70px;
 }
 
-/*					BUTTONS 			*/
-
 .click{
 	height: 30px;
 	width: 130px;
@@ -105,7 +98,6 @@ margin-left: 55px;
 
 
 .click2{
-	margin-left: 40px;
 	margin-top: 120px;
 	height: 30px;
 	width: 130px;
@@ -163,15 +155,7 @@ margin-left: 55px;
 		margin-top: 30px;
 	}
 
-	.surname {
-		margin-top: 0px;
-	}
-
-	.nameG {
-		margin-top: 0px;
-	}
-
-	.password {
+    .surname, .nameG, .password {
 		margin-top: 0px;
 	}
 }
@@ -193,13 +177,6 @@ margin-left: 55px;
 	}
 }
 
-/* ------------- Адаптация под iPhone 7/8 --------------- */
-
-@media (min-width: 375px) and (max-width: 667px){
-
-}
-
-
 /* ----------- Адаптация под iPhone 7/8 Plus ------------ */
 
 @media (min-width: 414px) and (max-width: 736px) {
@@ -211,55 +188,27 @@ margin-left: 55px;
 		margin-top: 30px;
 	}
 
-	.surname {
+    .surname, .nameG, .password {
 		margin-top: 0px;
 	}
 
-	.nameG {
-		margin-top: 0px;
-	}
-
-	.password {
-		margin-top: 0px;
-	}
 }
+
+/* ------------- Адаптация под iPhone 7/8 --------------- */
+
+@media (min-width: 375px) and (max-width: 667px) {
 
 }
 
 /* ------------- Адаптация под iPad --------------- */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
-	#click {
-		margin-top: -20px;
-	}
-
-	#dwtext {
-		margin-left: 65px;
-		padding-left: 35px;
-	}
-
-	#click2 {
-		margin-left: 10px;
-	}
-}
-
-/* ------------- Адаптация под iPad PRO --------------- */
-
-@media (min-width: 1024px) and (max-width: 1366px){
 	.dwtext, .email {
 		margin-left: 75px;
 	}
-
-	#click {
-		margin-top: -20px;
-	}
-
-	.fileform {
-		margin-left: 40px;
-		margin-top: 10px;
-	}
 }
+
+
 
 /* --------------- Адаптация под Galaxy S5 -------------- */
 
@@ -272,15 +221,7 @@ margin-left: 55px;
 		margin-top: 30px;
 	}
 
-	.surname {
-		margin-top: 0px;
-	}
-
-	.nameG {
-		margin-top: 0px;
-	}
-
-	.password {
+    .surname, .nameG, .password {
 		margin-top: 0px;
 	}
 }
@@ -289,28 +230,29 @@ margin-left: 55px;
 
 @media (min-width: 375px) and (max-width: 812px){
 
-	.fileform {
-		margin-top: 18px;
-	}
-
-	.click {
-		margin-top: 30px;
-	}
 }
 
-/*					INPUTS. 				*/
+/* ------------------------ Конец адаптации под телефоны ---------------------- */
 
-#login::-webkit-input-placeholder { color: #00ffff; }
-#login::-moz-placeholder { color: #00ffff; }
+/*Инпуты*/
 
-/*				Animation for inputs		*/
+input::-webkit-input-placeholder {
+    color: #00ffff;
+}
+
+input::-moz-placeholder {
+    color: #00ffff;
+}
+
+/*Анимация инпутов*/
+
 .group {
 	opacity: 1;
     position:relative;
     margin-bottom:45px;
 }
 
-#login {
+input {
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
@@ -319,7 +261,10 @@ margin-left: 55px;
     border-bottom:1px solid #ddd;
     color: #fff;
 }
-#login:focus{ outline:none; }
+
+input:focus {
+    outline: none;
+}
 
 
 label          {
@@ -335,8 +280,7 @@ label          {
     -webkit-transition:0.2s ease all;
 }
 
-
-#login:focus ~ label, #login:valid ~ label    {
+input:focus ~ label, input:valid ~ label {
     top:-20px;
     font-size:14px;
     color:#8e9cd1;
@@ -362,8 +306,7 @@ label          {
     right:50%;
 }
 
-
-#login:focus ~ .bar:before, #login:focus ~ .bar:after {
+input:focus ~ .bar:before, input:focus ~ .bar:after {
     width:50%;
 }
 
@@ -378,8 +321,7 @@ label          {
     opacity:1;
 }
 
-
-#login:focus ~ .highlight {
+input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
@@ -399,7 +341,9 @@ label          {
     to  { width:0; background:transparent; }
 }
 
-/*     INPUT [TYPE=FILE].     */
+/*Инпуты*/
+
+/*------- INPUT [TYPE=FILE] -------*/
 
 .fileform { 
     background-color: #FFFFFF;
@@ -447,20 +391,18 @@ label          {
 	font-size: 13px;
 }
 
-#fileformlabel { 
-background-color: #FFFFFF;
-color: #000;
-float: left;
-height: 22px;
-line-height: 22px;
-overflow: hidden;
-padding: 2px;
-text-align: left;
-vertical-align: middle;
-width:160px;
+#fileformlabel {
+    background-color: #FFFFFF;
+    color: #000;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width: 160px;
 }
-
-
 
 
 

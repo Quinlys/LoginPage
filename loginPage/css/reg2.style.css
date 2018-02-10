@@ -63,16 +63,12 @@ header {
 	margin: 0;
 	padding-left: 7vh;
 	font-size: 18px;
-	margin-left: 65px;
+    margin-left: 55px;
 	padding: 0;
 }
 
-.fileform {
-	margin-left: 40px;
-}
-
 .email {
-	margin-top: 30px;	
+    margin-top: 30px;
 	margin-left: 55px;
 }
 
@@ -94,7 +90,6 @@ header {
 }
 
 .click{
-	margin-left: 70px;
 	height: 30px;
 	width: 130px;
 	background-color: #4d86bf;
@@ -103,7 +98,6 @@ header {
 
 
 .click2{
-	margin-left: 40px;
 	margin-top: 120px;
 	height: 30px;
 	width: 130px;
@@ -149,6 +143,10 @@ header {
 /* --------------- Адаптация под iPhone 4 --------------- */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .click {
+        margin-left: 100px;
+    }
+
 	.group {
 		margin-left: 20px;
 	}
@@ -160,11 +158,6 @@ header {
 	.surname, .faculty, .nameG, .password, .pulpit, .post, .subject {
 		margin-top: 0px;
 	}
-
-	.fileform {
-		margin-top: 20px;
-		margin-left: 33px;
-	}
 }
 
 /* --------------- Адаптация под iPhone 5 --------------- */
@@ -172,19 +165,15 @@ header {
 @media (min-width: 320px) and (max-width: 568px) {
 
 	#dwtext {
-		margin-left: 27px;
+        margin-left: 37px;
 		width: 260px;
 	}
 	#click{
-		margin: 10px 0px 0px 125px;
+        margin: 10px 0px 0px 135px;
 	}
 
 	#click2{
-		margin: 0px 0px 20px 125px;
-	}
-
-	.fileform {
-		margin-left: 24px;
+        margin: 0px 0px 20px 135px;
 	}
 }
 
@@ -208,47 +197,16 @@ header {
 /* ------------- Адаптация под iPhone 7/8 --------------- */
 
 @media (min-width: 375px) and (max-width: 667px){
-	.fileform {
-		margin-left: 30px;
-	}
+
 }
 
 /* ------------- Адаптация под iPad --------------- */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	#dwtext {
-		margin-left: 65px;
-		padding-left: 35px;
-	}
-}
-
-/* ------------- Адаптация под iPad PRO --------------- */
-
-@media (min-width: 1024px) and (max-width: 1366px){
-	.email {
+    .dwtext, .email {
 		margin-left: 75px;
 	}
-
-	#dwtext {
-		margin-left: 75px;
-		padding: 0px;
-	}
-
-	#click {
-		margin-left: -10px;
-		margin-top: 10px;
-	}
-
-	.click2 {
-		margin-left: 110px;
-	}
-
-	.fileform {
-		margin-left: 35px;
-		margin-top: 10px;
-	}
 }
-
 
 
 
@@ -272,23 +230,7 @@ header {
 
 @media (min-width: 375px) and (max-width: 812px){
 
-	#dwtext {
-		margin-left: 35px;
-	}
 
-	.fileform {
-		margin-left: 35px;
-		margin-top: 18px;
-	}
-
-	#click {
-		margin-top: 30px;
-		margin-left: 135px;
-	}
-
-	#click2 {
-		margin-left: 135px;
-	}
 }
 
 
@@ -297,9 +239,12 @@ header {
 
 
 /*Инпуты*/
+
 input::-webkit-input-placeholder { color: #00ffff; }
 input::-moz-placeholder { color: #00ffff; }
+
 /*Анимация инпутов*/
+
 .group {
 	opacity: 1;
     position:relative;
@@ -394,9 +339,10 @@ input:focus ~ .highlight {
     from { background:#5264AE; }
     to  { width:0; background:transparent; }
 }
+
 /*Инпуты*/
 
-/*     INPUT [TYPE=FILE].     */
+/*------- INPUT [TYPE=FILE] -------*/
 
 .fileform { 
     background-color: #FFFFFF;
@@ -444,18 +390,19 @@ input:focus ~ .highlight {
 	font-size: 13px;
 }
 
-#fileformlabel { 
-background-color: #FFFFFF;
-color: #000;
-float: left;
-height: 22px;
-line-height: 22px;
-overflow: hidden;
-padding: 2px;
-text-align: left;
-vertical-align: middle;
-width:160px;
+#fileformlabel {
+    background-color: #FFFFFF;
+    color: #000;
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width: 160px;
 }
+
 
 
 
